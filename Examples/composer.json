@@ -1,0 +1,5 @@
+{
+    "require": {
+        "groupdocscloud/groupdocs-editor-cloud": "19.11"
+    }
+}
