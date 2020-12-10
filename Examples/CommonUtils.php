@@ -3,9 +3,9 @@
 // Common class to hold the constants and static functions
 class CommonUtils {
 
-    // TODO: Get your AppSID and AppKey at https://dashboard.groupdocs.cloud (free registration is required)
-    static $AppSid = 'XXXX-XXXX-XXXX-XXXX';
-    static $AppKey = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+    // TODO: Get your ClientId and ClientSecret at https://dashboard.groupdocs.cloud (free registration is required)
+    static $ClientId = 'XXXX-XXXX-XXXX-XXXX';
+    static $ClientSecret = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
     static $ApiBaseUrl = 'https://api.groupdocs.cloud';
 	static $MyStorage = 'First Storage';
 
@@ -15,8 +15,8 @@ class CommonUtils {
         $configuration = new GroupDocs\Editor\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(CommonUtils::$AppSid);
-        $configuration->setAppKey(CommonUtils::$AppKey);
+        $configuration->setAppSid(CommonUtils::$ClientId);
+        $configuration->setAppKey(CommonUtils::$ClientSecret);
         $configuration->setApiBaseUrl(CommonUtils::$ApiBaseUrl);
 
         // Retrun the new EditAPI instance
@@ -29,8 +29,8 @@ class CommonUtils {
         $configuration = new GroupDocs\Editor\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(CommonUtils::$AppSid);
-        $configuration->setAppKey(CommonUtils::$AppKey);
+        $configuration->setAppSid(CommonUtils::$ClientId);
+        $configuration->setAppKey(CommonUtils::$ClientSecret);
         $configuration->setApiBaseUrl(CommonUtils::$ApiBaseUrl);
 
         // Retrun the new Info instance
@@ -43,8 +43,8 @@ class CommonUtils {
         $configuration = new GroupDocs\Editor\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(CommonUtils::$AppSid);
-        $configuration->setAppKey(CommonUtils::$AppKey);
+        $configuration->setAppSid(CommonUtils::$ClientId);
+        $configuration->setAppKey(CommonUtils::$ClientSecret);
 
         // Retrun the new StorageApi instance
         return new GroupDocs\Editor\StorageApi($configuration);
@@ -56,8 +56,8 @@ class CommonUtils {
         $configuration = new GroupDocs\Editor\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(CommonUtils::$AppSid);
-        $configuration->setAppKey(CommonUtils::$AppKey);
+        $configuration->setAppSid(CommonUtils::$ClientId);
+        $configuration->setAppKey(CommonUtils::$ClientSecret);
 
         // Retrun the new FolderApi instance
         return new GroupDocs\Editor\FolderApi($configuration);
@@ -69,8 +69,8 @@ class CommonUtils {
         $configuration = new GroupDocs\Editor\Configuration();
 
         // Seting the configurations
-        $configuration->setAppSid(CommonUtils::$AppSid);
-        $configuration->setAppKey(CommonUtils::$AppKey);
+        $configuration->setAppSid(CommonUtils::$ClientId);
+        $configuration->setAppKey(CommonUtils::$ClientSecret);
 
         // Retrun the new FileApi instance
         return new GroupDocs\Editor\FileApi($configuration);
