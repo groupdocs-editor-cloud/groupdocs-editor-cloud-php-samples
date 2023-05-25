@@ -1,5 +1,5 @@
 {
     "require": {
-        "groupdocscloud/groupdocs-editor-cloud": "22.5"
+        "groupdocscloud/groupdocs-editor-cloud": "23.5"
     }
 }
